@@ -1,0 +1,13 @@
+services:
+    mvpdoers_phpmetrics_collector.data_collector.phpmetrics_collector:
+        class: MVPDoers\PhpMetricsCollectorBundle\DataCollector\PhpMetricsCollector
+        public: false
+        tags:
+          - { name: data_collector, template: "MVPDoersPhpMetricsCollectorBundle:Collector:collector.html.twig", id: "mvpdoers.phpmetrics_collector" }
+
+
+#    mvpdoers_phpmetrics_collector.data_collector.phpmetrics_collector:
+#        class: MVPDoers\PhpMetricsCollectorBundle\DataCollector\PhpMetricsCollector
+#        tags:
+#          - { name: data_collector, template: "MVPDoersPhpMetricsCollectorBundle:Collector:collector", id: "phpmetrics_collector", priority: 300 }
+#        public: false
